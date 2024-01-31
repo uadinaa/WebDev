@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Udacity Site Header</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  
+<!-- TODO: The header is the wrong color! The text should use the color: #697681 --> 
+<!-- TODO: The header text should also be a bit thicker. Set the font weight to 400.-->
+<!-- TODO: Looks like the header logo is taking up too much space. Can you limit the width to only 200px? -->
+<!-- TODO: The background color of the body is a little off. Let's change that color to #ddd. -->
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background:#ddd;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      color: #697681;
+      background: white;
+      height: 85px;
+      padding: 15px;
+    }
+    section {
+      padding: 16px;
+    }
+    .flex-container {
+      display: flex;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .vertical-centerer {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .header-content {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logo {
+      width: 90px;
+      display: inline-block;
+      margin: 10px 0px;
+    }
+    .menu {
+      list-style: none;
+      list-style-type: none;
+    }
+    .menu > li {
+      display: inline;
+      margin-left: 37.5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="vertical-centerer flex-container">
+      <div class="flex-container space-between header-content">
+        <div>
+          <span>
+            <img class="logo" src="data:image/png;base64,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" alt="Udacity Logo">
+          </span>
+        </div>
+        <div>
+          <ul class="menu">
+            <li>Nanodegree</li>
+            <li>Catalog</li>
+            <li>Classroom</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <p>Ewww. The header looks weird.</p>
+
+    <p>
+      You need to use workspace editor to change this website and get the header looking the way it should.
+    </p>
+  </section>
+</body>
+</html>
