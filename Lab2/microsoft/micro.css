@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+}
+
+.mainPhoto{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+.fi{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 8px;
+}
+
+.se{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 8px;
+}
+
+.th{
+    position: absolute;
+    margin-left: 360px;
+    margin-top: 8px;
+}
+
+.fo{
+    position: absolute;
+    margin-left: 445px;
+    margin-top: 8px;
+}
+
+.fiv{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 8px;
+}
+
+.si{
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 8px;
+}
+
+.sev{
+    position: absolute;
+    margin-left: 1290px;
+    margin-top: 8px;
+}
+
+.sevFri{
+    position: absolute;
+    margin-left: 1350px;
+}
+
+.mainWindow{
+    position: absolute;
+    margin-top: 45px;
+}
+
+.photos{
+    position: absolute;
+    margin-top: 750px;
+}
+
+.photoTwo{
+    position: absolute;
+    margin-left: 95px;
+}
+
+.photoThree{
+    position: absolute;
+    margin-left: 470px;
+}
+
+.photoFour{
+    position: absolute;
+    margin-left: 840px;
+}
+
+.capsula{
+    display: flex;
+}
+.capsula a{
+    color:rgb(63, 63, 238);
+}
+
+.capsulaF{
+    background-color:white;
+    margin-top: 920px;
+    margin-left: 0px;
+    width: 300px;
+    height: 180px;
+}
+
+.capsulaS{
+    background-color:white;
+    margin-top: 920px;
+    margin-left: 99px;
+    width: 300px;
+    height: 180px;
+}
+
+.capsulaT{
+    background-color:white;
+    margin-top: 920px;
+    margin-left: 70px;
+    width: 300px;
+    height: 180px;
+}
+
+.capsulaFo{
+    background-color:white;
+    margin-top: 920px;
+    margin-left: 70px;
+    width: 300px;
+    height: 180px;
+}
+
+.aa a{
+    color:#737373;
+    font-size: 13px;
+}
+
+.aa a:hover{
+    text-decoration: underline;
+}
