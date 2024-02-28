@@ -1,0 +1,129 @@
+<div *ngFor="let category of categories" id="Box">
+  <div id="catingBox">
+  <a (click)="changeCategory(category)">
+    <h2>{{ category.title }}</h2>
+  </a>
+</div>
+  <div *ngIf="activeCategory === category" id="catedProducts">
+    <app-product-list [products]="category.products"></app-product-list>
+    <!-- <app-product-details></app-product-details> -->
+  </div>
+  <!-- <app-product-details></app-product-details> -->
+</div>
+
+
+
+
+
+<!-- <div *ngFor="let categorie of categories">
+  <a (click)="changeCategory(categorie)">
+      {{ categorie.title }}
+  </a>
+  <app-product-list [products]="categorie.products"></app-product-list>
+</div> -->
+
+
+
+
+
+<!-- <div *ngFor="let categorie of categories">
+  <a (click)="changeCategory(categorie)">
+     {{ categorie.title }}
+  </a>
+</div> -->
+
+<!-- <ul *ngFor="let categorie of categories">
+  <li>
+  <a (click)="changeCategory(categorie)">
+      {{ categorie.title }}
+  </a>
+  <app-product-list [products]="categories.products"></app-product-list>
+</li>
+</ul> -->
+
+
+
+
+
+  <!-- <h3>{{ categories.title }}</h3> -->
+
+  
+
+<!-- 
+<ul *ngFor="let category of categories">
+  <li>
+    <a (click)="changeCategory(category)">
+      {{ category.name }}
+    </a>
+    <app-category [category]="category"></app-category>
+  </li>
+</ul> -->
+
+
+<!-- <div *ngIf="activeCategory">
+  <app-product-list [products]="activeCategory.products"></app-product-list>
+</div>   -->
+
+
+
+
+
+<!-- <div *ngIf="activeCategory">
+  <a >
+    
+  </a>
+</div> -->
+
+<!-- <div *ngFor="let categorie of categories" class="">
+  <div>
+    <h2>
+      <a [title]="categorie.title" id="name" >
+        {{ categorie.title }}
+      </a>
+    </h2>
+</div> 
+<div *ngIf="categorie">
+  <a (click)="changeCategory(categorie)">
+      <app-product-list [products]="categories.products"></app-product-list>
+    </a>
+</div> -->
+
+<!-- 
+</div> -->
+
+<!-- 
+
+<div *ngFor="let product of products" id="product">
+  <div id="left">
+    < style="float: left; width: 50%;"
+    <h2>
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]"
+        id="name"
+      >
+        {{ product.name }}
+      </a>
+    </h2>
+    <br />
+
+    <img id="imageMain" src="{{ product.imageUrl }}" alt="photo of item" />
+  </div>
+
+  <div id="right">
+    style="float: right; width: 50%;"
+    <p *ngIf="product.description">описание: {{ product.description }}</p>
+
+    <button type="button" (click)="shareTelegram(product.name, product.buyUrl)">
+      Share
+    </button>
+
+    <a href="{{ product.buyUrl }}" target="_blank"
+      ><button type="button" (click)="buy()">Buy</button></a
+    >
+  </div>
+</div>
+
+
+
+-->

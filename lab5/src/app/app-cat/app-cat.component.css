@@ -1,0 +1,17 @@
+#Box {
+  display: flex;
+  flex-direction: column; /* display children in a column */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+  
+#catingBox {
+  border: 1px solid #6637b3;
+  padding: 10px;
+}
+  
+#catedProducts.show {
+  display: block;
+  margin-top: 10px;
+}
+

@@ -1,0 +1,31 @@
+<h3>details</h3>
+
+<div *ngIf="product" id="innerProduct">
+  <h2>{{ product.name }}</h2>
+
+  <img src="{{ product.imageUrl }}" />
+  <img src="{{ product.imageUrl1 }}" />
+  <img src="{{ product.imageUrl2 }}" />
+
+  <h4>цена: {{ product.price }}</h4>
+  <h4>рейтинг: {{ product.rating }}</h4>
+  <h4 id="likeName">ляйки: {{ product.likes }}</h4>
+
+  <p>описание: {{ product.description }}</p>
+
+  <div id="buttons">
+    <button type="button" (click)="like(product)" id="likeButt">Like</button>
+
+    <a href="{{ product.buyUrl }}" id="buyButt" target="_blank">
+      <button type="button">Buy</button>
+    </a>
+
+    <button
+      type="button"
+      (click)="shareWhatsapp(product.name, product.buyUrl)"
+      id="shareButt">Share
+    </button>
+
+    <!-- <button type="button" (click)="remove(product)" id="removeButt">Remove</button> -->
+  </div>
+</div>

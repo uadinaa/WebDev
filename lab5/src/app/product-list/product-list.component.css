@@ -1,0 +1,29 @@
+#product {
+  display: flex;
+  /* border: 1px solid rgba(90, 71, 196, 0.52); */
+  border-radius: 10px;
+  margin: 15px 15px 15px 15px;
+}
+
+#left {
+  width: 50vw;
+}
+
+#right {
+  width: 50vw;
+  margin-top: 250px;
+}
+
+/* .product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #db2323;
+} */
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

@@ -1,0 +1,39 @@
+<!-- <h3>items</h3> -->
+
+<div *ngFor="let product of products" id="product">
+  <div id="left">
+    <!-- style="float: left; width: 50%;" -->
+    <h2>
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]"
+        id="name"
+      >
+        {{ product.name }}
+      </a>
+    </h2>
+    <br />
+
+    <img id="imageMain" src="{{ product.imageUrl }}" alt="photo of item" />
+  </div>
+
+  <div id="right">
+    <!-- style="float: right; width: 50%;" -->
+    <p id="likeName">ляйки: {{ product.likes }}</p> 
+
+    <p *ngIf="product.description">описание: {{ product.description }}</p>
+
+    <button type="button" (click)="shareTelegram(product.name, product.buyUrl)">
+      Share
+    </button>
+
+    <a href="{{ product.buyUrl }}" target="_blank"
+      ><button type="button" (click)="buy()">Buy</button></a
+    >
+
+    <button type="button" id="likeButt" (click)="like(product)">Like</button>
+    <button type="button" (click)="remove(product)" id="removeButt">Remove</button>
+
+    
+  </div>
+</div>
