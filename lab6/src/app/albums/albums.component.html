@@ -1,0 +1,11 @@
+<h2>albums list: </h2>
+<div *ngIf="loaded; else: loading">
+    <div *ngFor="let album of albums">
+        <a [routerLink]="['/albums', album.id]">{{album.id}} --- {{album.title}}</a>
+        <button (click)="deleteAlbum(album.id)">x</button>
+    </div>
+</div>
+
+    <ng-template #loading>
+        <p>Posts are loading...</p>
+    </ng-template>

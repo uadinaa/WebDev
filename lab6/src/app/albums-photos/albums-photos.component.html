@@ -1,0 +1,12 @@
+<h3>albums-photo: </h3>
+
+<button (click)="goToHome()"> return and turn back </button>
+
+<div *ngIf="loaded">
+    <div *ngFor="let photo of photos">
+        <h5>{{photo.title}}</h5>
+        <img src="{{photo.url}}" alt="">
+    </div>
+</div>
+<p *ngIf="!loaded"> is loading...</p>
+

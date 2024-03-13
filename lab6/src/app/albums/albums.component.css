@@ -1,0 +1,26 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration:none;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgba(41, 23, 146, 0.52);
+    color: white;
+    border: none;
+    margin: 9px 10px 5px 40px;
+  }
+  
+  .button:hover,
+  button:hover {
+    opacity: 0.8;
+    font-weight: normal;
+  }
