@@ -9,18 +9,33 @@ import { AppCatComponent } from './app-cat/app-cat.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 
+import { AboutComponent } from './about/about.component';
+import { AlbumsComponent } from './albums/albums.component';
+import { routes } from './app.routes';
+
+import { CommonModule } from '@angular/common';
+
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: AppCatComponent},
-      { path: 'products', component: ProductListComponent }, //products
-      { path: 'products/:productId', component: ProductDetailsComponent },
+    CommonModule,
+    // FirstComponent, 
+    // SecondComponent,
+    // AppComponent,
+    RouterModule.forRoot(routes),
+    RouterModule.forRoot(
+      [
+      { path: 'home', component: AppCatComponent},// null
+      { path: 'home', component: AppComponent}, // null
+      { path: 'home', component: ProductListComponent }, //products
+      { path: 'home', component: ProductDetailsComponent }, //products/:productId
     ]),
   ],
 
-  declarations: [AppComponent, AppCatComponent,  TopBarComponent, ProductListComponent],
+  declarations: [AppCatComponent, AppComponent, TopBarComponent, ProductListComponent],
+  // FirstComponent, SecondComponent,
+  providers: [],
 
   bootstrap: [AppComponent],
 })

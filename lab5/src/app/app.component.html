@@ -1,6 +1,31 @@
 <div>
 <app-top-bar></app-top-bar>
-<app-category></app-category>
+<!-- <app-category></app-category> -->
+
+<h1>HOME PAGE</h1>
+<nav>
+  <!-- <ul> -->
+    <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">HOME</a> <br>
+    <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">ABOUT</a> <br>
+    <a routerLink="/albums" routerLinkActive="active" ariaCurrentWhenActive="page">ALBUMS</a> <br>
+  <!-- </ul> -->
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<!-- <router-outlet></router-outlet> -->
+
+<router-outlet></router-outlet>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <!-- <div *ngFor="let categorie of categories" class="">
   <div>
     <h2>
@@ -8,8 +33,6 @@
         {{ categorie.title }}
       </a>
     </h2> -->
-</div>
-
 <!-- 
 
 <div *ngFor="let product of products" id="product">
