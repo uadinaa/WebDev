@@ -33,10 +33,10 @@ listsBox.addEventListener("click", function(e){
 }, false);
 
 function save(){
-    localStorage.setItem("data", listsBox.innerHTML)
+    localStorage.setItem("MySuperPuperSecretData", listsBox.innerHTML)
 }
 
 function show(){
-    listsBox.innerHTML = localStorage.getItem("data");
+    listsBox.innerHTML = localStorage.getItem("MySuperPuperSecretData"); // not safe to save as data
 }
 show();
