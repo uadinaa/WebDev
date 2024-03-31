@@ -1,0 +1,200 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:#f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #316FF6;
+    font-size: 60px;
+}
+
+.boxbody{
+    display: flex; 
+    flex-wrap: wrap;
+    /* устине шыгып кетти */
+    justify-content: center;
+    /* центрга шыгып кетти узындыгынан */
+    align-items: center;
+    /* типа биыктиктен центрге шыгарды */
+    /* width: 99%; was */
+    width: 97%;
+    /* солдан онга жылжиды когда проц кобейгенде */
+    /* height: 600px; was */
+    height: 100vh;
+    /* устинен санагандагы биыктыги */
+}
+
+.logo{
+    width: 500px;
+    line-height: 2px;
+    /* width: 400px; */
+} 
+
+/* .logo img{
+    width: 235px;
+    margin-bottom: -10px;
+    /* margin-bottom: -45px;
+}  */
+
+.logo p{
+    color:black;
+    font-size: 28px;
+    font-weight: normal;
+    /* line height текст арасындагы биыктык, но именно р дагы */
+    line-height: 32px;
+}
+
+.mainbox{
+    /* ени */
+    width: 355px; 
+    /* кырымен коробканын ара кашыктыгы */
+    padding: 15px;
+
+    text-align: center; 
+    /* именно бурыштарынын донгелек болуы */
+    border-radius: 10px;
+    background:#fff;
+    /* текстпен логонын коробка арасындагы ара кашыктыкка влияет */
+    margin-left: 60px;
+
+    box-shadow: 0px 2px 7px 1px rgba(105, 104, 104, 0.52);
+}
+
+.mainbox input{
+    /* коробканын ишиндеги инпуттарынын узындыгы */
+    width: 100%;
+    /* осы инпуттарынын арасындагы биыктикти контр */
+    margin-bottom: 0px;
+    /* коробканын шеттери ау */
+    padding: 12px; 
+    /* тексттын инпуттын ишиндери размери */
+    font-size: 16px;
+
+    box-sizing: border-box;
+    /* коробканын инпуттын сырты кой, типа кырларынын жуандыгы */
+    border: 1px solid #eeebeb;
+     /* именно бурыштарынын донгелек болуы, а так кыр прям 90 */
+    border-radius: 5px;
+}
+
+/* .mainbox input focus {
+    box-shadow: Opx 0px 1px 1px rgb (22, 111, 229);
+} */
+
+.mainbox button{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 13px 0; 
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #166fe5;
+
+}
+
+.mainbox .forgot{ 
+    color: #166fe5; 
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 20px; 
+    display: block;
+}
+
+.mainbox .forgot:hover{
+    text-decoration: underline;
+}
+
+.mainbox hr{
+    /* border: 0.5px solid #dadde1; */
+    border: 0.4px solid #dadde1;
+    margin-bottom: 15px;
+}
+
+.mainbox .create{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 20px; 
+    border-radius: 5px; 
+    background: #4ac233;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.mainbox .create:hover{
+    background: #2d9419;
+}
+
+.boxbody .proacc{
+    /* булар керек емес, себеби ол коропканын ишиндегисин гана контр WAS*/
+    display:flex;
+    justify-content:end;
+    align-items: center;
+    width: 76%;
+    /* width: 95%; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    /* фонт сайз 0 десе идельная коробка болып тур гой */
+    /* margin-top: 20px; астына жылжыту, бир коробканын ишинде болса ол осип кетеди */
+    /* margin-bottom: 140px; */
+    /* margin-left: 0px;  */
+    position: absolute;
+    bottom: 200px;
+    right: 310px;
+
+}
+
+footer{
+    background-color: white;
+    
+}
+
+.foa{
+    color: #7e8396;
+    text-decoration:none;
+    word-spacing: 10px;
+    font-size: 13px;
+}
+
+.foa:hover{
+    text-decoration: underline;
+}
+
+.meta{
+    color: #7e8396;
+    font-size: 13px;
+}
+
+.page{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* create the page -bold-link-no underline */
+/* .boxbody .page{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+.boxbody .page:hover{
+    text-decoration: underline;
+} */
+
+/* .mainbox .forgot{ 
+    color: #166fe5; 
+    
+    margin-top: 5px;
+    margin-bottom: 20px; 
+    
+} */
+
