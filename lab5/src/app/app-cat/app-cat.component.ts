@@ -24,9 +24,6 @@ export class AppCatComponent {
 }
 
 
-
-
-
   // categories = [...categories];
   // products: Product[] | undefined;
   // | undefined;

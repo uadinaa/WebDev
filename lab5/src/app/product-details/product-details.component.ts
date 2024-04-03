@@ -32,7 +32,7 @@ export class ProductDetailsComponent implements OnInit {
   //     localStorage.setItem("likes, liki.innerHTML");
   //   }
   // }
-    
+
 
   remove(product:Product){
     const index = products.findIndex((p) => p.id === product.id);

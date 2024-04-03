@@ -162,7 +162,7 @@ export const categories: Categories[] = [
         likes: 126,
         description: 
           'тип: LED-телевизор, диагональ: 43.0 дюйм , разрешение: 1366x768 , поддержка HD: 1080p Full HD , технология Smart TV: Да , wi-Fi: Да , входы: AV ,HDMI, ,USB, ,Bluetooth', 
-      }, 
+      }, // Product.objects.create(name="Телевизор Yasin",price=96000, description="тип: LED-телевизор, диагональ: 43.0 дюйм , разрешение: 1366x768", count=43, is_active=True, category=category_instance)
       { 
         id: 11, 
         name: "Wi-Fi роутер TELE2", 
@@ -196,7 +196,7 @@ export const categories: Categories[] = [
         likes: 36,
         rating: "5/5", 
         description: "Совместимость: iPad Pro 12.9-дюймов (5, 4, 3 -го поколения); iPad Pro 11-дюймов (3, 2, 1 -го поколения); iPad Air (5, 4-го поколения); iPad mini (6-го поколения)" 
-      }, 
+      }, //Product.objects.create(name="Стилус Apple Pencil 2nd Generation",price=53950, description="Совместимость: iPad Pro 12.9-дюймов диагональ:(5, 4, 3 -го поколения)", count=54, is_active=True, category=category_instance1)
     ] 
   }, 
 

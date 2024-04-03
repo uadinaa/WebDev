@@ -9,38 +9,22 @@ import { AppCatComponent } from './app-cat/app-cat.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 
-import { AboutComponent } from './about/about.component';
-import { AlbumsComponent } from './albums/albums.component';
-import { routes } from './app.routes';
-
-import { CommonModule } from '@angular/common';
-
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    CommonModule,
-    // FirstComponent, 
-    // SecondComponent,
-    // AppComponent,
-    RouterModule.forRoot(routes),
-    RouterModule.forRoot(
-      [
-      { path: 'home', component: AppCatComponent},// null
-      { path: 'home', component: AppComponent}, // null
-      { path: 'home', component: ProductListComponent }, //products
-      { path: 'home', component: ProductDetailsComponent }, //products/:productId
+    RouterModule.forRoot([
+      { path: '', component: AppCatComponent},
+      { path: 'products', component: ProductListComponent }, //products
+      { path: 'products/:productId', component: ProductDetailsComponent },
     ]),
   ],
 
-  declarations: [AppCatComponent, AppComponent, TopBarComponent, ProductListComponent],
-  // FirstComponent, SecondComponent,
-  providers: [],
+  declarations: [AppComponent, AppCatComponent,  TopBarComponent, ProductListComponent],
 
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
