@@ -1,0 +1,19 @@
+<p>companies works!</p>
+
+<p>тут будет лист компаний и компания тандап басканда перенаправление туда болады, тут типа хоум педж, уелкоминг вайб болады крч</p>
+
+
+<h2> companies </h2>
+<div *ngIf="loaded; else: loading">
+    <div *ngFor="let company of companies">
+        <a [routerLink]="['/home', company.companyId]">{{company.companyId}} - {{company.name}}</a>
+    </div>
+</div>
+
+<div *ngFor="let vacancys of vacancies">
+    <app-vacancy>[vacancy]="vacancys"</app-vacancy>
+</div>
+
+<ng-template #loading>
+    <p>Posts are loading...</p>
+</ng-template>

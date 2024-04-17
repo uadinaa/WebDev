@@ -1,0 +1,20 @@
+<p>company works!</p>
+
+<p>тут будет инфа про компанию, ич кой</p>
+
+
+<div *ngIf="loaded">
+    <h2>company details</h2>
+    <div>
+        <h4>name : {{company.name}}</h4>
+        <h3>description: {{company.description}} <br> in the city {{company.city}} by address: {{company.address}}</h3>
+    </div>
+  
+    <button [routerLink]="['/home']">return and turn back</button>
+
+    <div *ngFor="let vacancys of vacancies">
+        <app-vacancy>[vacancy]="vacancys"</app-vacancy>
+    </div>
+
+</div>
+<p *ngIf="!loaded"> is loaaadiiing...</p>

@@ -1,0 +1,26 @@
+<ul>
+  <li>
+    <a routerLink="/home">home</a> <br>
+  </li>
+  <li>
+    <a routerLink="/company" routerLinkActive="active" ariaCurrentWhenActive="page">company</a> <br>
+  </li>
+  <li>
+    <a routerLink="/vacancy" routerLinkActive="active" ariaCurrentWhenActive="page">vacancy</a> <br>
+  </li>
+</ul>
+  
+<router-outlet></router-outlet>
+
+<!-- export const routes: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: CompaniesComponent, title: 'home' },
+    { path: 'company', component: CompanyComponent, title: 'company' },
+    { path: 'vacancy', component: VacancyComponent, title: 'vacancy' },
+    { path: 'company/:id', component: CompanyComponent },
+    { path: 'company/:id/photos', component: CompanyComponent },
+    { path: 'vacancy/:id', component: VacancyComponent },
+    { path: 'vacancy/:id/photos', component: VacancyComponent },
+    {path: '**', component: NotFoundComponent, title: '404 Not Found'}
+  ];
+   -->
